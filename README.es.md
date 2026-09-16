@@ -15,6 +15,7 @@ Este paquete forma parte de [Hub UI](https://hubui.dev/en/), una colección de l
 - Documentación: https://hubui.dev/en/metrics/overview/
 - Ejemplos en vivo: https://hubui.dev/en/metrics/examples/
 - Hub UI: https://hubui.dev/en/
+- Hub UI en GitHub (incidencias, roadmap y cómo contribuir): https://github.com/hub-env/hub-ui
 
 ## 🧩 Familia de librerías `ng-hub-ui`
 
