@@ -1,5 +1,14 @@
 # Changelog
 
+## [22.4.2] - 2026-09-21
+
+### Fixed
+
+- **`hub-ring` announces the value it actually draws.** `aria-valuenow` was bound to the raw
+  `value`, while the arc paints the ratio clamped into `0..max`, so a value past `max` drew a full
+  ring and announced a number outside the range it was measured against — `aria-valuenow="5"`
+  against `aria-valuemax="1"`. It now reports the clamped figure, which is what the reader sees.
+
 ## [22.4.1] - 2026-09-16
 
 ### Changed

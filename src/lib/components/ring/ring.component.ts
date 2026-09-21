@@ -32,7 +32,7 @@ import { HubRingBand, HubRingThresholds } from './ring.types';
 		'[style.--hub-ring-thickness]': 'thicknessCss()',
 		'[attr.aria-valuemin]': '0',
 		'[attr.aria-valuemax]': 'max()',
-		'[attr.aria-valuenow]': 'value()',
+		'[attr.aria-valuenow]': 'ariaValueNow()',
 		'[attr.aria-valuetext]': 'displayValue()',
 		'[attr.aria-label]': 'label() || null'
 	}
@@ -82,6 +82,13 @@ export class HubRingComponent {
 		}
 		return Math.min(1, Math.max(0, this.value() / max));
 	});
+
+	/**
+	 * Value announced to assistive technology. The arc paints the clamped ratio, so
+	 * reporting the raw input would put `aria-valuenow` outside the range it is
+	 * measured against the moment a caller overshoots `max`.
+	 */
+	protected readonly ariaValueNow = computed(() => this.fraction() * this.max());
 
 	/** Completion as a `0..100` percentage. */
 	protected readonly percent = computed(() => this.fraction() * 100);
