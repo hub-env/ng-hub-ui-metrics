@@ -1,5 +1,17 @@
 # Breaking Changes — ng-hub-ui-metrics
 
+## [22.5.0] - 2026-09-23
+
+### Angular below 17.3.0 is no longer supported
+
+- **Change**: the `@angular/*` peer ranges move from `>=17.1.0` to `>=17.3.0`.
+
+- **Why**: Its published `.d.ts` names `InputSignalWithTransform` or `OutputEmitterRef`, which Angular did not ship until 17.3.
+
+- **Impact — an application below 17.3.0 gets a peer warning where it used to get a build error.**
+  Nothing that worked stops working: those versions never compiled against this package. Upgrade
+  Angular to 17.3.0 or stay on the previous release.
+
 ## [22.4.0] - 2026-09-08
 
 ### The stylesheet no longer reaches outside the component
@@ -41,6 +53,7 @@
     did, and encapsulation only stamps the rules the library itself emits.
 
 ## [22.3.0] - 2026-09-06
+
 ### A static `aria-label` on `<hub-meter>` or `<hub-ring>` is no longer kept
 
 - **Change**: both primitives now bind `aria-label` from the new `label` input. A host binding owns
@@ -60,4 +73,3 @@
 - **Change**: the theming mixin now builds to `dist/metrics/styles/...` instead of `dist/metrics/src/lib/styles/...`, and a `styles/index.scss` root entry forwards it.
 - **Impact**: a `@use` that reached into the old `src/lib/styles/...` path no longer resolves.
 - **Migration**: `@use 'ng-hub-ui-metrics/styles' as *;`
-
