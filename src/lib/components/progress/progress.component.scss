@@ -52,7 +52,7 @@
 .hub-progress__value {
 	flex: 0 0 auto;
 	min-inline-size: 3ch;
-	color: var(--hub-sys-text-primary, #212529);
+	color: var(--hub-sys-text-body, #212529);
 	font-size: var(--hub-ref-font-size-sm, 0.875rem);
 	font-weight: var(--hub-ref-font-weight-semibold, 600);
 	text-align: end;

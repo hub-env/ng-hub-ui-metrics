@@ -191,7 +191,7 @@ per-instance `color` input for one-off semantic tints.
 | `--hub-ring-thickness` | `0.5rem` | Stroke width. |
 | `--hub-ring-track` | subtle neutral | Track (unfilled) stroke. |
 | `--hub-ring-indicator` | `--hub-sys-color-primary` | Indicator stroke. |
-| `--hub-ring-caption-color` | `--hub-sys-text-primary` | Centre caption colour. |
+| `--hub-ring-caption-color` | `--hub-sys-text-body` | Centre caption colour. |
 | `--hub-ring-low-color` | `--hub-sys-color-danger` | Stroke below the low threshold. |
 | `--hub-ring-high-color` | `--hub-sys-color-success` | Stroke at/above the high threshold. |
 

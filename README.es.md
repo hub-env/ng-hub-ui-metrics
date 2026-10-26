@@ -194,7 +194,7 @@ para tintes semánticos puntuales.
 | `--hub-ring-thickness` | `0.5rem` | Grosor del trazo. |
 | `--hub-ring-track` | neutro sutil | Trazo de la pista (sin rellenar). |
 | `--hub-ring-indicator` | `--hub-sys-color-primary` | Trazo del indicador. |
-| `--hub-ring-caption-color` | `--hub-sys-text-primary` | Color del rótulo central. |
+| `--hub-ring-caption-color` | `--hub-sys-text-body` | Color del rótulo central. |
 | `--hub-ring-low-color` | `--hub-sys-color-danger` | Trazo por debajo del umbral bajo. |
 | `--hub-ring-high-color` | `--hub-sys-color-success` | Trazo en/por encima del umbral alto. |
 

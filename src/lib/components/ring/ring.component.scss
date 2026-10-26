@@ -17,7 +17,7 @@
 	--hub-ring-thickness: var(--hub-ref-space-2, 0.5rem);
 	--hub-ring-track: color-mix(in oklch, var(--hub-sys-color-neutral, #6c757d) 20%, transparent);
 	--hub-ring-indicator: var(--hub-sys-color-primary, #0d6efd);
-	--hub-ring-caption-color: var(--hub-sys-text-primary, #212529);
+	--hub-ring-caption-color: var(--hub-sys-text-body, #212529);
 	--hub-ring-low-color: var(--hub-sys-color-danger, #dc3545);
 	--hub-ring-high-color: var(--hub-sys-color-success, #198754);
 }
